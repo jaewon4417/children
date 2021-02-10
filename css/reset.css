@@ -17,14 +17,12 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
-     /* bold */
+}
+h1, h2, h3, h4, h5, h6, strong, th {
+    font-weight:normal; /* bold */
+}
+address, em {
     font-style:normal;  /* italic */
-}
-h1, h2, h3, h4, h5, h6, strong, th{
-    font-weight: normal;
-}
-address, em { 
-    font-style: normal;
 }
 
 body {
@@ -96,4 +94,9 @@ input, select {
 img { vertical-align:middle; max-width:100% }
 * { margin:0; padding:0; box-sizing:border-box; }
 .cf::after { content:''; display:block; clear:both }
-
+.blind {
+    position:absolute; width:0px; height:0px;
+    overflow:hidden; font-size:0px;
+    text-indent:-9999px;
+    line-height:0px;
+}
